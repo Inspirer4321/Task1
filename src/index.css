@@ -1,3 +1,120 @@
-.hello {
-  color: rgb(198, 9, 9);
-}
+    .todo-list {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .add-todo {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .add-todo input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .add-todo input.highlighted {
+    border-color: #ff0000;
+  }
+  
+  .add-todo button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+  } 
+    .todo-list {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .add-todo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .add-todo input[type="text"] {
+        flex-grow: 1;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      
+      .add-todo button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .highlight {
+        animation: highlightAnimation 1s;
+      }
+      
+      @keyframes highlightAnimation {
+        0% {
+          background-color: #ff0000;
+        }
+        100% {
+          background-color: transparent;
+        }
+      }
+      
+      .todos {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .todos li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .todos li.completed {
+        text-decoration: line-through;
+      }
+      
+      .todos li label {
+        display: flex;
+        align-items: center;
+      }
+      
+      .todos li input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      
+      .todos li .todo-text {
+        flex-grow: 1;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      
+      .delete-button {
+        margin-left: 10px;
+        padding: 2px;
+        width: 20px;
+        height: 20px;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1;
+        cursor: pointer;
+      }
+        
